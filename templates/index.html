@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+    <p>Hello, index.html here!</p>
+
+
+    <p>{{text}}</p>
+    <p>Trenutačna godina: {{year}}</p>
+
+    {% for grad in gradovi %}
+        <p>{{grad}}</p>
+    {% endfor %}
+
+
+{% endblock content %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<p>Ovo je o nama!</p>
+
+<form method="post" action="/kontakt">
+    <input type="text" name="kontakt-ime" placeholder="Unesi ime">
+    <br>
+
+    <input type="text" name="kontakt-adresa" placeholder="Adresa">
+    <br>
+
+    <input type="email" name="kontakt-email" placeholder="Email">
+    <br>
+
+    <textarea name="kontakt-poruka" placeholder="Upiši poruku"></textarea>
+    <br>
+
+    <button type="submit">Pošalji</button>
+</form>
+
+{% endblock content %}
